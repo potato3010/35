@@ -27,9 +27,12 @@ function draw(){
             balloon.x = balloon.x + 10;
         }
         else if(keyDown(UP_ARROW)){
+            balloon.scale=balloon.scale -0.01;
             balloon.y = balloon.y - 10;
+
         }
         else if(keyDown(DOWN_ARROW)){
+            balloon.scale=balloon.scale +0.01;
              balloon.y = balloon.y + 10;
         }
         drawSprites();
